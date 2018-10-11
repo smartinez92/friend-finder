@@ -1,0 +1,24 @@
+{
+    "name": "friend-finder",
+    "version": "1.0.0",
+    "description": "Full stacked friend finder site ",
+    "main": "server.js",
+    "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartinez92/FriendFinder.git"
+    },
+    "author": "Steven Martinez",
+    "bugs": {
+    "url": "https://github.com/smartinez92/FriendFinder/issues"
+    },
+    "homepage": "https://github.com/smartinez92/FriendFinder#readme",
+    "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+    }
+    }

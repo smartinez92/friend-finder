@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FriendFinder Survey</title>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-88w0u/oucDSTE30ETLLIobzhT+bQ6CSsiqQyLZpwHvve89eqUA9F2Db6ST6jGRLx" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center comic"><span class="glyphicon glyphicon-heart"></span>Friend Finder Survey</h1>
+			<div class="text-center">
+				<a href="home.html"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+			</div>
+			<hr>
+			
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1"></span>
+			  <input type="text" class="form-control friendName" placeholder="Name" aria-describedby="sizing-addon2">
+			</div>
+
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1"></span>
+			  <input type="text" class="form-control photoLink" placeholder="Link to your photo" aria-describedby="sizing-addon2">
+			</div>
+
+
+			<h2 class="text-center">Answer the following questions<br>1 Hate it! - 5 Love it!</h2>
+			<br>
+
+			<form id="q1">
+			   <h2>1 - Do you like animals?</h2>
+			  <div class="well">
+			  <input type="radio" name="q1" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q1" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q1" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q1" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q1" value="5"> 5
+			</div>
+			</form>
+
+			<form id="q2">
+			   <h2>2 - Do you like children?</h2>
+			  <div class="well">
+			  <input type="radio" name="q2" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q2" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q2" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q2" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q2" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q3">
+			   <h2>3 - Do you like senior citizens?</h2>
+			  <div class="well">
+			  <input type="radio" name="q3" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q3" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q3" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q3" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q3" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q4">
+			   <h2>4 - Do you like sports?</h2>
+			  <div class="well">
+			  <input type="radio" name="q4" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q4" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q4" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q4" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q4" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q5">
+			   <h2>5 - Do you like listening to live music?</h2>
+			  <div class="well">
+			  <input type="radio" name="q5" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q5" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q5" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q5" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q5" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q6">
+			   <h2>6 - Do you like to watch TV?</h2>
+			  <div class="well">
+			  <input type="radio" name="q6" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q6" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q6" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q6" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q6" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q7">
+			   <h2>7 - Do you like to go to live theatre?</h2>
+			  <div class="well">
+			  <input type="radio" name="q7" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q7" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q7" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q7" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q7" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q8">
+			   <h2>8 - Do you like traveling?</h2>
+			  <div class="well">
+			  <input type="radio" name="q8" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q8" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q8" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q8" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q8" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+
+			<form id="q9">
+			   <h2>9 - Do you like the beach?</h2>
+			  <div class="well">
+			  <input type="radio" name="q9" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q9" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q9" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q9" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q9" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+		
+			</form>
+
+			<form id="q10">
+			   <h2>10 - Do you like the mountains?</h2>
+			  <div class="well">
+			  <input type="radio" name="q10" value="1"> 1&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q10" value="2"> 2&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q10" value="3"checked> 3&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q10" value="4"> 4&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="radio" name="q10" value="5"> 5&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			
+			</form>
+			
+			<a href="#" class="btn btn-success submit">Submit</a>
+		</div>
+	</div>
+
+<!-- Modal -->
+	<div id="bestFriendModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h2 class="modal-title"><strong>Your most compatible friend</strong></h2>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="bestName"></h2>
+	        <h4 id="alert"></h4>
+	        <img id="bestPhoto" alt="" height="500" width="570">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+<script>
+var currentURL = window.location.origin;
+$(".submit").on("click", function(){
+		//Are the fields populated?
+		var goToPost = false;
+		
+		if($('.friendName').val().trim()!=="" 
+			&& 
+			$('.photoLink').val().trim()!=="")
+		{
+			
+			goToPost = true
+		}
+		if (goToPost){
+			//setup JSON object for the new friend from the form data
+			var newFriend = {
+				"friendName": $('.friendName').val().trim(),
+				"friendPhoto": $('.photoLink').val().trim(),
+				"scores" : [
+				$('input[name="q1"]:checked').val(),
+				$('input[name="q2"]:checked').val(),
+				$('input[name="q3"]:checked').val(),
+				$('input[name="q4"]:checked').val(),
+				$('input[name="q5"]:checked').val(),
+				$('input[name="q6"]:checked').val(),
+				$('input[name="q7"]:checked').val(),
+				$('input[name="q8"]:checked').val(),
+				$('input[name="q9"]:checked').val(),
+				$('input[name="q10"]:checked').val()
+				]
+				
+			};
+			
+			// var currentURL = window.location.origin;
+		    $.post(currentURL + "/api/survey", newFriend,
+		    function(data){
+		    	//response is bestfriend name and link to photo in the data object.
+		    	console.log(data.name,data.photo);
+		    	//We'll plug these items into the MODAL.
+	    		$("#bestName").text(data.name);
+	    		$("#alert").text(data.alert);
+	    		$("#bestPhoto").attr("src",data.photo);
+				$("#bestFriendModal").modal('toggle');
+				//clear the form
+	    		$('.friendName').val("");
+				$('.photoLink').val("");
+		    });
+		}else{
+			
+			alert("Please complete the form before submitting.");
+		}
+	
+	return false;
+});
+$('#closeModal').click(function() {
+    $.get('/',function(req,res){
+    	// $(".body").load(res);
+    location.replace(res);
+    })
+});
+</script>
+
+</body>
+</html>
